@@ -1,0 +1,41 @@
+ilmkon_school_bot/
+│
+├── bot.py                # Asosiy fayl (bot run qilinadi)
+│
+├── config.py             # Token, admin ID, sozlamalar
+├── requirements.txt      # Kutubxonalar ro‘yxati
+│
+├── handlers/             # Handlerlar (funksiyalar)
+│   ├── __init__.py
+│   ├── start.py          # /start va asosiy menyu
+│   ├── info.py           # Maktab haqida, e’lonlar
+│   ├── teachers.py       # O‘qituvchilar ro‘yxati
+│   ├── lessons.py        # Dars lavhalari
+│   ├── parents.py        # Ota-onalar bo‘limi (jadval, baho, to‘lov tugmasi)
+│   ├── jobs.py           # Ishga kirish arizasi
+│   └── admin.py          # Admin panel xabarlari
+│
+├── keyboards/            # Inline va Reply tugmalar
+│   ├── __init__.py
+│   ├── main_menu.py      # Asosiy menyu tugmalari
+│   ├── teachers_menu.py
+│   ├── parents_menu.py
+│   └── admin_menu.py
+│
+├── database/             # Ma’lumotlar bazasi
+│   ├── __init__.py
+│   ├── db.py             # Baza bilan bog‘lanish (SQLite yoki PostgreSQL)
+│   └── models.py         # Jadval modellari (Teachers, Students, Payments, Jobs)
+│
+├── media/                # Rasm va videolar
+│   ├── teachers/         # O‘qituvchilar rasmi
+│   ├── lessons/          # Dars lavhalari
+│   └── school/           # Maktab logosi, umumiy rasm
+│
+├── utils/                # Qo‘shimcha yordamchi fayllar
+│   ├── __init__.py
+│   ├── notify_admins.py  # Adminlarga xabar yuborish funksiyasi
+│   └── validators.py     # Forma tekshiruvchilar (masalan, telefon raqam)
+│
+└── logs/                 # Log fayllar
+    └── bot.log

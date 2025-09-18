@@ -1,4 +1,4 @@
-# Ilkon_school_info_bot
+# Ilmkon_school_info_bot
 Ilmkon_school
 
 📌 Ilmkon School Bot – Texnik Topshiriq (TZ)
